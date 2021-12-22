@@ -1,0 +1,17 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+/*Index.html*/
+
+.bodyWrap {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #cccccc;
+}
+
+.bodyWrap h1 {
+	text-align: center;
+	font-size: 4rem;
+}
