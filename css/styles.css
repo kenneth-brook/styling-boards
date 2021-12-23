@@ -16,6 +16,7 @@ html {
 	height: 250px;
 	border-bottom: 4px solid #999999;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: flex-start;
 }
@@ -33,8 +34,41 @@ html {
 	padding: 25px;
 }
 
+.notice {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.notice p {
+	font-size: 2.3rem;
+}
+
 .controlBody {
 	width: 100%;
 	min-height: 100vh;
+}
+
+.controlRow {
+	width: 100%;
 	border-top: 4px solid #333333;
+	border-bottom: 4px solid #999999;
+	display: flex;
+}
+
+.controlBox {
+	width: 33%;
+	min-height: 250px;
+}
+
+.controlBox:first-child {
+	border-right: 4px solid #333333;
+}
+
+.controlBox:nth-child(2) {
+	border-left: 4px solid #999999;
+	border-right: 4px solid #999999;
+}
+
+.controlBox:last-child {
+	border-left: 4px solid #333333;
 }
