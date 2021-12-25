@@ -9,6 +9,10 @@ html {
 	--box-shadow-blur: 0;
 	--box-shadow-spread: 0;
 	--box-shadow-color: #333;
+	--text-shadow-offset-x: 0;
+	--text-shadow-offset-y: 0;
+	--text-shadow-blur: 0;
+	--text-shadow-color: #333;
 }
 
 /* Index.html */
@@ -36,9 +40,11 @@ html {
 	margin-top: 55px;
 	box-shadow: var(--box-shadow-offset-x) var(--box-shadow-offset-y)
 		var(--box-shadow-blur) var(--box-shadow-spread) var(--box-shadow-color);
+	text-shadow: var(--text-shadow-offset-x) var(--text-shadow-offset-y)
+		var(--text-shadow-blur) var(--text-shadow-color);
 }
 
-.bodyWrap .head .headWrap h1 {
+.headWrap h1 {
 	text-align: center;
 	font-size: 4rem;
 	padding: 25px;
@@ -88,7 +94,7 @@ html {
 
 .controlBox p {
 	font-size: 1.8rem;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .slideWrap {
@@ -104,12 +110,31 @@ html {
 #box-shadow-offset-x,
 #box-shadow-offset-y,
 #box-shadow-blur,
-#box-shadow-spread {
+#box-shadow-spread,
+#text-shadow-offset-x,
+#text-shadow-offset-y,
+#text-shadow-blur,
+#text-shadow-spread {
 	width: 75%;
-	margin-top: 20px;
 }
 
 .controlBox h3 {
 	font-size: 3.2rem;
 	margin-top: 15px;
+}
+
+.outputBox {
+	width: 70%;
+	height: 95px;
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 12px;
+	margin-bottom: 10px;
+}
+
+.outputBox p {
+	color: lime;
+	text-align: center;
+	font-size: 1.4rem;
+	font-family: "Raleway Dots", cursive;
 }

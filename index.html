@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -52,8 +56,36 @@
             <input id="box-shadow-spread" type="range" min="0" max="50" value="0">
             <p>+</p>
           </div>
+          <div class="outputBox">
+            <p>What the code looks like</p>
+            <p>box-shadow: <span id="output1">0</span>px <span id="output2">0</span>px <span id="output3">0</span>px <span id="output4">0</span>px #000000</p>
+          </div>
         </div>
-        <div class="controlBox"></div>
+        <div class="controlBox">
+          <h3>Text Shadow</h3>
+          <p>Position Left/Right</p>
+          <div class="slideWrap">
+            <p>L</p>
+            <input id="text-shadow-offset-x" type="range" min="-20" max="20" value="0">
+            <p>R</p>
+          </div>
+          <p>Position Up/Down</p>
+          <div class="slideWrap">
+            <p>U</p>
+            <input id="text-shadow-offset-y" type="range" min="-20" max="20" value="0">
+            <p>D</p>
+          </div>
+          <p>Blur</p>
+          <div class="slideWrap">
+            <p>-</p>
+            <input id="text-shadow-blur" type="range" min="0" max="50" value="0">
+            <p>+</p>
+          </div>
+          <div class="outputBox">
+            <p>What the code looks like</p>
+            <p>text-shadow: <span id="output21">0</span>px <span id="output22">0</span>px <span id="output23">0</span>px #000000</p>
+          </div>
+        </div>
         <div class="controlBox"></div>
       </div>
       <div class="controlRow">
