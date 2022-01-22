@@ -18,6 +18,7 @@ html {
 	--border-thickness: 0;
 	--border-style: solid;
 	--border-color: #000;
+	--border-radius: 0;
 }
 
 /* Index.html */
@@ -54,6 +55,7 @@ html {
 	color: var(--text-color);
 	background-color: var(--background-color);
 	border: var(--border-thickness) var(--border-style) var(--border-color);
+	border-radius: var(--border-radius);
 }
 
 .headWrap h1 {
@@ -127,7 +129,9 @@ html {
 #text-shadow-offset-y,
 #text-shadow-blur,
 #text-shadow-spread,
-#border-thickness {
+#border-thickness,
+#border-radius-px,
+#border-radius-percent {
 	width: 75%;
 }
 

@@ -106,12 +106,30 @@ drop52.addEventListener('input', function(){
         
 });
 
-const slider53 = document.querySelector('#border-color');
+const drop53 = document.querySelector('#border-color');
 const output53 = document.getElementById("output53");
 
-slider53.addEventListener('input', function(){
+drop53.addEventListener('input', function(){
     
-  root.style.setProperty("--border-color", slider53.value);
+  root.style.setProperty("--border-color", drop53.value);
   output53.innerHTML = this.value;
+        
+});
+
+const slider61 = document.querySelector('#border-radius-px');
+const slider62 = document.querySelector('#border-radius-percent');
+const output61 = document.getElementById("output61");
+
+slider61.addEventListener('input', function(){
+    
+  root.style.setProperty("--border-radius", slider61.value + "px");
+  output61.innerHTML = this.value + "px";
+        
+});
+
+slider62.addEventListener('input', function(){
+    
+  root.style.setProperty("--border-radius", slider62.value + "%");
+  output61.innerHTML = this.value + "%";
         
 });
