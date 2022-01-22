@@ -85,3 +85,33 @@ backgroundColor.addEventListener('input', function(){
   output41.innerHTML = this.value;
         
 });
+
+const slider51 = document.querySelector('#border-thickness');
+const output51 = document.getElementById("output51");
+
+slider51.addEventListener('input', function(){
+    
+  root.style.setProperty("--border-thickness", slider51.value + "px");
+  output51.innerHTML = this.value;
+        
+});
+
+const drop52 = document.querySelector('#border-style');
+const output52 = document.getElementById("output52");
+
+drop52.addEventListener('input', function(){
+    
+  root.style.setProperty("--border-style", drop52.value);
+  output52.innerHTML = this.value;
+        
+});
+
+const slider53 = document.querySelector('#border-color');
+const output53 = document.getElementById("output53");
+
+slider53.addEventListener('input', function(){
+    
+  root.style.setProperty("--border-color", slider53.value);
+  output53.innerHTML = this.value;
+        
+});

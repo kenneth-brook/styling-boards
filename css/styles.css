@@ -15,6 +15,9 @@ html {
 	--text-shadow-color: #333;
 	--text-color: #000;
 	--background-color: #FFF;
+	--border-thickness: 0;
+	--border-style: solid;
+	--border-color: #000;
 }
 
 /* Index.html */
@@ -50,6 +53,7 @@ html {
 		var(--text-shadow-blur) var(--text-shadow-color);
 	color: var(--text-color);
 	background-color: var(--background-color);
+	border: var(--border-thickness) var(--border-style) var(--border-color);
 }
 
 .headWrap h1 {
@@ -122,7 +126,8 @@ html {
 #text-shadow-offset-x,
 #text-shadow-offset-y,
 #text-shadow-blur,
-#text-shadow-spread {
+#text-shadow-spread,
+#border-thickness {
 	width: 75%;
 }
 
@@ -151,10 +156,11 @@ html {
 select {
 	font-size: 2.2rem;
 	padding: 3px 20px;
+	margin-bottom: 15px;
 }
 
 label {
-	font-size: 3.2rem;
+	font-size: 1.8rem;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }

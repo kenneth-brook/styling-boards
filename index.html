@@ -87,6 +87,7 @@
           </div>
         </div>
         <div class="controlBox">
+          <h3>Text Color</h3>
           <label for="text-color">Choose a color:</label>
           <select name="text-color" id="textColor">
             <option value="#000000">Black</option>
@@ -103,6 +104,7 @@
       </div>
       <div class="controlRow">
         <div class="controlBox">
+          <h3>Background Color</h3>
           <label for="background-color">Choose a color:</label>
           <select name="background-color" id="backgroundColor">
             <option value="#FFFFFF">White</option>
@@ -118,7 +120,35 @@
         </div>
         <div class="controlBox">
           <h3>Border</h3>
-          <p>Coming Soon</p>
+          <p>Border thickness</p>
+          <div class="slideWrap">
+            <p>-</p>
+            <input id="border-thickness" type="range" min="0" max="20" value="0">
+            <p>+</p>
+          </div>
+          <label for="border-style">Choose a style:</label>
+          <select name="border-style" id="border-style">
+            <option value="solid">Solid</option>
+            <option value="dotted">Dotted</option>
+            <option value="dashed">Dashed</option>
+            <option value="double">Double</option>
+            <option value="groove">Groove</option>
+            <option value="ridge">Ridge</option>
+            <option value="inset">Inset</option>
+            <option value="outset">Outset</option>
+          </select>
+          <label for="border-color">Choose a color:</label>
+          <select name="border-color" id="border-color">
+            <option value="#000000">Black</option>
+            <option value="#FFFFFF">White</option>
+            <option value="#0000FF">Blue</option>
+            <option value="#00FF00">Green</option>
+            <option value="#FF0000">Red</option>
+          </select>
+          <div class="outputBox">
+            <p>What the code looks like</p>
+            <p>border: <span id="output51">0</span>px <span id="output52">solid</span> <span id="output53">#000000</span></p>
+          </div>
         </div>
         <div class="controlBox">
           <h3>Border Radius</h3>
