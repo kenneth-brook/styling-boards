@@ -41,6 +41,16 @@ slider4.addEventListener('input', function(){
           
 });
 
+const drop1 = document.querySelector('#box-shadow-color')
+const output5 = document.getElementById("output5");
+
+drop1.addEventListener('input', function(){
+      
+  root.style.setProperty("--box-shadow-color", drop1.value);
+  output5.innerHTML = this.value;
+          
+});
+
 // Control Box 2
 const slider21 = document.querySelector('#text-shadow-offset-x');
 const output21 = document.getElementById("output21");
@@ -70,6 +80,16 @@ slider23.addEventListener('input', function(){
   root.style.setProperty("--text-shadow-blur", slider23.value + "px");
   output23.innerHTML = this.value;
         
+});
+
+const drop21 = document.querySelector('#text-shadow-color')
+const output24 = document.getElementById("output24");
+
+drop21.addEventListener('input', function(){
+      
+  root.style.setProperty("--text-shadow-color", drop21.value);
+  output24.innerHTML = this.value;
+          
 });
 
 textColor.addEventListener('input', function(){

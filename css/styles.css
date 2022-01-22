@@ -8,11 +8,11 @@ html {
 	--box-shadow-offset-y: 0;
 	--box-shadow-blur: 0;
 	--box-shadow-spread: 0;
-	--box-shadow-color: #333;
+	--box-shadow-color: #000;
 	--text-shadow-offset-x: 0;
 	--text-shadow-offset-y: 0;
 	--text-shadow-blur: 0;
-	--text-shadow-color: #333;
+	--text-shadow-color: #000;
 	--text-color: #000;
 	--background-color: #FFF;
 	--border-thickness: 0;
