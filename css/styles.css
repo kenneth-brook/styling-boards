@@ -13,6 +13,8 @@ html {
 	--text-shadow-offset-y: 0;
 	--text-shadow-blur: 0;
 	--text-shadow-color: #333;
+	--text-color: #000;
+	--background-color: #FFF;
 }
 
 /* Index.html */
@@ -46,6 +48,8 @@ html {
 		var(--box-shadow-blur) var(--box-shadow-spread) var(--box-shadow-color);
 	text-shadow: var(--text-shadow-offset-x) var(--text-shadow-offset-y)
 		var(--text-shadow-blur) var(--text-shadow-color);
+	color: var(--text-color);
+	background-color: var(--background-color);
 }
 
 .headWrap h1 {
@@ -140,6 +144,17 @@ html {
 .outputBox p {
 	color: lime;
 	text-align: center;
-	font-size: 1.4rem;
-	font-family: "Raleway Dots", cursive;
+	font-size: 1.8rem;
+	font-family: "roboto";
+}
+
+select {
+	font-size: 2.2rem;
+	padding: 3px 20px;
+}
+
+label {
+	font-size: 3.2rem;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }

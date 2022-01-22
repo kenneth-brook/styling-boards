@@ -71,3 +71,17 @@ slider23.addEventListener('input', function(){
   output23.innerHTML = this.value;
         
 });
+
+textColor.addEventListener('input', function(){
+    
+  root.style.setProperty("--text-color", textColor.value);
+  output31.innerHTML = this.value;
+        
+});
+
+backgroundColor.addEventListener('input', function(){
+    
+  root.style.setProperty("--background-color", backgroundColor.value);
+  output41.innerHTML = this.value;
+        
+});
